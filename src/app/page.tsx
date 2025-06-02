@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen p-8 bg-base-100">
@@ -44,7 +42,6 @@ export default function Home() {
           <div className="card bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">Third Card</h2>
-              <p>All these components are styled with daisyUI's beautiful design system.</p>
               <div className="card-actions justify-end">
                 <button className="btn btn-accent">Explore</button>
               </div>
