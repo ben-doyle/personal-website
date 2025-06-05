@@ -1,2 +1,97 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --color-night: #171614;
+  --color-bistre: #3a2618;
+  --color-garnet: #754043;
+  --color-beaver: #9a8873;
+  --color-black-olive: #37423d;
+  
+  /* Font families */
+  --font-family-poppins: Poppins, ui-sans-serif, system-ui, sans-serif;
+  --font-family-dm-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Base styles */
+:root {
+  --background: #F7F3E9;
+  --foreground: #171614;
+  --card-background: #FEFCF6;
+  --muted: #9a8873;
+  --border: #9a8873;
+  --heading: #171614;
+  --text-secondary: #3a2618;
+  --accent: #754043;
+  --accent-alt: #37423d;
+}
+
+[data-theme="dark"] {
+  --background: #171614;
+  --foreground: #ffffff;
+  --card-background: rgb(32, 32, 30);
+  --muted: #9a8873;
+  --border: #37423d;
+  --heading: #ffffff;
+  --text-secondary: #9a8873;
+  --accent: #754043;
+  --accent-alt: #37423d;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DaisyUI theme overrides */
+[data-theme="light"] {
+  --fallback-p: #171614;
+  --fallback-pc: #ffffff;
+  --fallback-s: #754043;
+  --fallback-sc: #ffffff;
+  --fallback-a: #9a8873;
+  --fallback-ac: #171614;
+  --fallback-n: #171614;
+  --fallback-nc: #ffffff;
+  --fallback-b1: #F7F3E9;
+  --fallback-b2: #9a8873;
+  --fallback-b3: #37423d;
+  --fallback-bc: #171614;
+}
+
+[data-theme="dark"] {
+  --fallback-p: #754043;
+  --fallback-pc: #ffffff;
+  --fallback-s: #9a8873;
+  --fallback-sc: #171614;
+  --fallback-a: #37423d;
+  --fallback-ac: #ffffff;
+  --fallback-n: #171614;
+  --fallback-nc: #ffffff;
+  --fallback-b1: #171614;
+  --fallback-b2: #3a2618;
+  --fallback-b3: #37423d;
+  --fallback-bc: #ffffff;
+}
+
+/* Custom bounce animation for scroll arrow */
+@keyframes gentle-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s infinite;
+}
