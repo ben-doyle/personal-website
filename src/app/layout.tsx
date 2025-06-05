@@ -17,8 +17,8 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Benjamin - Indie Hacker & Software Engineer",
-  description: "Portfolio of Benjamin, an Indie-Hacker and Software Engineer building products that matter.",
+  title: "Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer",
+  description: "Portfolio of Benjamin Doyle, an AI enthusiast, Indie-Hacker and Software Engineer building products that matter.",
 }
 
 export default function RootLayout({
