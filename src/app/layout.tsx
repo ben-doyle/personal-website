@@ -19,6 +19,38 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer",
   description: "Portfolio of Benjamin Doyle, an AI enthusiast, Indie-Hacker and Software Engineer building products that matter.",
+  keywords: ["Benjamin Doyle", "AI", "Indie Hacker", "Software Engineer", "Portfolio", "Full Stack Developer", "React", "Next.js"],
+  authors: [{ name: "Benjamin Doyle" }],
+  creator: "Benjamin Doyle",
+  metadataBase: new URL('https://ben-doyle.com'), // Update this to your actual domain
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ben-doyle.com', // Update this to your actual domain
+    siteName: 'Benjamin Doyle Portfolio',
+    title: "Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer",
+    description: "Portfolio of Benjamin Doyle, an AI enthusiast, Indie-Hacker and Software Engineer building products that matter.",
+    images: [
+      {
+        url: '/ben_profile.png',
+        width: 1200,
+        height: 630,
+        alt: 'Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer',
+        type: 'image/png',
+      }
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
