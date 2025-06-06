@@ -115,7 +115,7 @@ export default function Portfolio() {
       logo: "/geeksociety-logo.png",
       screenshots: ["/indie-arcade.jpg"],
       ctaText: "Learn More",
-      ctaLink: "https://geeksociety.com.au",
+      ctaLink: "https://geeksociety.com.au/2017/11/08/introducing-the-indie-arcade/",
       showGrowth: false,
     },
   ]
