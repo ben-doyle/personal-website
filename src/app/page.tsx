@@ -496,14 +496,14 @@ export default function Portfolio() {
       showGrowth: false,
     },
     {
-      title: "Guidr",
+      title: "Guiddr",
       description: "Discover and Share the Best Places in Your City with Your Team",
       tagline:
         "Explore your colleagues recommendations in your city, find the best coffee spots, bars, restaurants, and outdoor activities.",
       logo: "/guidr-logo.svg",
               screenshots: ["/guidr1.png", "/guidr2.png", "/guidr3.png"],
-      ctaText: "Explore Guidr",
-      ctaLink: "https://guidr.app",
+      ctaText: "Explore Guiddr",
+      ctaLink: "https://guiddr.com",
       showGrowth: false,
     },
   ]
