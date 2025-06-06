@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { MapPinIcon, ChartBarIcon } from "@heroicons/react/24/outline"
+import { MapPinIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 import { GithubIcon, BlueSkyIcon, LinkedinIcon } from "@/components/SocialIcons"
 
@@ -147,7 +147,7 @@ export const EmailSignup = ({ className = "", emailPlaceholder, emailButtonText 
         setStatus('error')
         setMessage(result.error || "Something went wrong. Please try again.")
       }
-    } catch (error) {
+    } catch {
       setStatus('error')
       setMessage("Network error. Please check your connection and try again.")
     } finally {
