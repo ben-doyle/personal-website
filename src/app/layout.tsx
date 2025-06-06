@@ -22,19 +22,19 @@ export const metadata: Metadata = {
   keywords: ["Benjamin Doyle", "AI", "Indie Hacker", "Software Engineer", "Portfolio", "Full Stack Developer", "React", "Next.js"],
   authors: [{ name: "Benjamin Doyle" }],
   creator: "Benjamin Doyle",
-  metadataBase: new URL('https://ben-doyle.com'), // Update this to your actual domain
+  metadataBase: new URL('https://imjackofitall.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ben-doyle.com', // Update this to your actual domain
+    url: 'https://imjackofitall.com',
     siteName: 'Benjamin Doyle Portfolio',
     title: "Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer",
     description: "Portfolio of Benjamin Doyle, an AI enthusiast, Indie-Hacker and Software Engineer building products that matter.",
     images: [
       {
         url: '/ben_profile.png',
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: 'Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer',
         type: 'image/png',
       }
