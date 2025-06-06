@@ -545,7 +545,7 @@ export default function Portfolio() {
       isComingSoon: true
     },
     {
-      title: "All-class cleaning",
+      title: "All-class cleaning & yard maintenance",
       description:
         "Single-page site that pairs a bold mascot brand with a service checklist and before-after gallery, guiding homeowners from problem to \"Contact Us\" in one scroll.",
       ctaText: "View Project",
