@@ -240,7 +240,10 @@ const ProjectCard = ({
               
               {/* Dropdown gallery for remaining images */}
               {showAllThumbnails && screenshots.length > 3 && (
-                <div className="absolute top-14 sm:top-14 md:top-14 right-0 z-10 bg-white dark:bg-gray-800 border border-beaver/20 dark:border-beaver/30 rounded-lg shadow-lg p-2 min-w-[120px] sm:min-w-[140px] md:min-w-[180px]">
+                <div 
+                  className="absolute top-14 sm:top-14 md:top-14 right-0 z-10 border border-beaver/20 dark:border-beaver/30 rounded-lg shadow-lg p-2 min-w-[120px] sm:min-w-[140px] md:min-w-[180px]"
+                  style={{backgroundColor: 'var(--card-background)'}}
+                >
                   <div className="grid grid-cols-2 gap-2">
                     {screenshots.slice(2).map((screenshot, index) => (
                       <button
@@ -490,7 +493,7 @@ export default function Portfolio() {
       description: "Planning Poker, in Quokka style!",
       tagline: "Estimate, collaborate, and hang loose like the happiest animal on Earth.",
       logo: "/shaka-shuffle-logo.svg",
-      screenshots: ["/ShakkaShuffle1.png"],
+      screenshots: ["/ShakkaShuffle1.png", "/ShakkaShuffle2.png", "/ShakkaShuffle3.png", "/ShakkaShuffle4.png"],
       ctaText: "Try ShakkaShuffle",
       ctaLink: "https://shakkashuffle.com",
       showGrowth: false,
