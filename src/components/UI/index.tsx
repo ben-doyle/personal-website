@@ -262,4 +262,28 @@ export const EmailSignup = ({ className = "", emailPlaceholder, emailButtonText 
       )}
     </form>
   )
-} 
+}
+
+export const BlogLink = ({ className = "" }: { className?: string }) => (
+  <div className={`text-center ${className}`}>
+    <a
+      href="https://blog.imjackofitall.com"
+      className="inline-flex items-center gap-2 text-sm font-dm-sans transition-all duration-200 group"
+      style={{ color: 'var(--text-secondary)' }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.color = 'var(--accent)'
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.color = 'var(--text-secondary)'
+      }}
+    >
+      <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+      </svg>
+      Read my blog
+      <svg className="w-3 h-3 opacity-60 transition-all group-hover:opacity-100 group-hover:translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </a>
+  </div>
+) 

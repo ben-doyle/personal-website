@@ -7,7 +7,7 @@ import { ChartBarIcon, ChevronDownIcon } from "@heroicons/react/24/outline"
 import DarkModeToggle from "@/components/DarkModeToggle/DarkModeToggle"
 import { ImageModal } from "@/components/ImageModal/ImageModal"
 import { ProjectSection } from "@/components/ProjectSection/ProjectSection"
-import { Avatar, SocialButtons, ProfileBadges, EmailSignup } from "@/components/UI"
+import { Avatar, SocialButtons, ProfileBadges, EmailSignup, BlogLink } from "@/components/UI"
 
 // Content constants to avoid duplication
 const content = {
@@ -135,7 +135,7 @@ export default function Portfolio() {
     {
       title: "All-class cleaning & yard maintenance",
       description:
-        "Single-page site that pairs a bold mascot brand with a service checklist and before-after gallery, guiding homeowners from problem to \"Contact Us\" in one scroll.",
+        "I have designed the brand, logo, and website for a local cleaning company. The website is a single-page site that pairs a bold mascot brand with a service checklist and before-after gallery, guiding homeowners from problem to \"Contact Us\" in one scroll.",
       ctaText: "View Project",
       ctaLink: "https://allclasscleaning.com.au",
       logo: "/all-class-logo.png",
@@ -175,6 +175,7 @@ export default function Portfolio() {
             </div>
 
             <EmailSignup emailPlaceholder={content.emailPlaceholder} emailButtonText={content.emailButtonText} />
+            <BlogLink />
             <SocialButtons />
           </div>
 
@@ -220,8 +221,8 @@ export default function Portfolio() {
               {content.ctaTextMobile}
             </p>
           </div>
-
           <EmailSignup className="space-y-3" emailPlaceholder={content.emailPlaceholder} emailButtonText={content.emailButtonText} />
+          <BlogLink />
           <SocialButtons />
         </div>
 
