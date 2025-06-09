@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Portfolio of Benjamin Doyle, an AI enthusiast, Indie-Hacker and Software Engineer building products that matter.",
     images: [
       {
-        url: '/ben_profile.png',
+        url: '/ben-profile.jpg',
         width: 1024,
         height: 1024,
         alt: 'Benjamin Doyle - AI enthusiast, Indie-Hacker & Software Engineer',

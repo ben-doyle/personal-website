@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
           <table role="presentation" style="width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
             <tr>
               <td style="background: linear-gradient(135deg, #754043 0%, #C19A6B 100%); padding: 40px 30px; text-align: center;">
-                <img src="https://imjackofitall.com/ben_profile.png" alt="Benjamin Doyle" style="width: 80px; height: 80px; border-radius: 50%; border: 4px solid rgba(255,255,255,0.2); display: block; margin: 0 auto 20px auto;" />
+                <img src="https://imjackofitall.com/ben-profile.jpg" alt="Benjamin Doyle" style="width: 80px; height: 80px; border-radius: 50%; border: 4px solid rgba(255,255,255,0.2); display: block; margin: 0 auto 20px auto;" />
                 <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 600;">Hey there! 👋</h1>
                 <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Thanks for reaching out</p>
               </td>
