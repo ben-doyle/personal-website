@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Poppins, DM_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/providers/ThemeProvider"
+import { Analytics } from '@vercel/analytics/next'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

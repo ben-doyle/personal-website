@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { MapPinIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
-import { GithubIcon, BlueSkyIcon, LinkedinIcon } from "@/components/SocialIcons"
+import { GithubIcon, BlueSkyIcon, LinkedinIcon, TwitterIcon, ResumeIcon } from "@/components/SocialIcons"
 
 interface AvatarProps {
   size?: string
@@ -43,7 +43,47 @@ export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
         e.currentTarget.style.color = 'var(--text-secondary)'
       }}
     >
+      <ResumeIcon />
+    </button>
+    <button 
+      className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
+      style={{
+        borderColor: 'var(--muted)',
+        color: 'var(--text-secondary)',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = 'var(--accent)'
+        e.currentTarget.style.backgroundColor = 'var(--accent)'
+        e.currentTarget.style.color = '#ffffff'
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = 'var(--muted)'
+        e.currentTarget.style.backgroundColor = 'transparent'
+        e.currentTarget.style.color = 'var(--text-secondary)'
+      }}
+    >
       <BlueSkyIcon />
+    </button>
+    <button 
+      className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
+      style={{
+        borderColor: 'var(--muted)',
+        color: 'var(--text-secondary)',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = 'var(--accent)'
+        e.currentTarget.style.backgroundColor = 'var(--accent)'
+        e.currentTarget.style.color = '#ffffff'
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = 'var(--muted)'
+        e.currentTarget.style.backgroundColor = 'transparent'
+        e.currentTarget.style.color = 'var(--text-secondary)'
+      }}
+    >
+      <TwitterIcon />
     </button>
     <button 
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
