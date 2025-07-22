@@ -80,8 +80,8 @@ export const ProjectCard = ({
               <Image
                 src={logo}
                 alt={`${title} logo`}
-                width={80}
-                height={48}
+                width={100}
+                height={100}
                 className="w-full h-full object-contain"
               />
             </div>
