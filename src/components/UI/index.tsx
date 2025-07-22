@@ -8,7 +8,7 @@ interface AvatarProps {
 }
 
 export const Avatar = ({ size = "w-40 h-40" }: AvatarProps) => (
-  <div className={`${size} rounded-full overflow-hidden shadow-lg border-4 mx-auto`} style={{borderColor: 'var(--card-background)'}}>
+  <div className={`${size} rounded-full overflow-hidden border-4 mx-auto`} style={{borderColor: 'var(--card-background)'}}>
     <Image
       src="/ben-profile.jpg?height=160&width=160"
       alt="Benjamin"
@@ -25,7 +25,7 @@ interface SocialButtonsProps {
 
 export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
   <div className={`flex justify-center gap-3 ${className}`}>
-    <button 
+    <button
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
       style={{
         borderColor: 'var(--muted)',
@@ -45,7 +45,7 @@ export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
     >
       <ResumeIcon />
     </button>
-    <button 
+    <button
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
       style={{
         borderColor: 'var(--muted)',
@@ -65,7 +65,7 @@ export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
     >
       <BlueSkyIcon />
     </button>
-    <button 
+    <button
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
       style={{
         borderColor: 'var(--muted)',
@@ -85,7 +85,7 @@ export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
     >
       <TwitterIcon />
     </button>
-    <button 
+    <button
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
       style={{
         borderColor: 'var(--muted)',
@@ -105,7 +105,7 @@ export const SocialButtons = ({ className = "" }: SocialButtonsProps) => (
     >
       <GithubIcon />
     </button>
-    <button 
+    <button
       className="btn btn-outline btn-circle hover:scale-105 transition-all duration-200"
       style={{
         borderColor: 'var(--muted)',
@@ -135,11 +135,11 @@ interface ProfileBadgesProps {
 
 export const ProfileBadges = ({ isMobile = false, location }: ProfileBadgesProps) => (
   <div className={`flex justify-center gap-${isMobile ? '2' : '3'} ${isMobile ? 'flex-wrap' : ''}`}>
-    <span 
-      className={`badge rounded-full px-3 py-1 ${isMobile ? 'text-xs' : ''}`} 
+    <span
+      className={`badge rounded-full px-3 py-1 ${isMobile ? 'text-xs' : ''}`}
       style={{
-        backgroundColor: 'var(--accent)', 
-        color: '#ffffff', 
+        backgroundColor: 'var(--accent)',
+        color: '#ffffff',
         borderColor: 'var(--accent)',
         boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
       }}
@@ -237,20 +237,20 @@ export const EmailSignup = ({ className = "", emailPlaceholder, emailButtonText 
       >
         {isLoading ? "Sending..." : emailButtonText}
       </button>
-      
+
       {/* Status Message */}
       {message && (
-        <div 
+        <div
           className="text-center text-sm font-dm-sans py-2 px-3 rounded-full transition-all duration-300"
           style={{
             backgroundColor: 'var(--card-background)',
-            color: status === 'success' 
-              ? 'var(--accent)' 
+            color: status === 'success'
+              ? 'var(--accent)'
               : status === 'error'
               ? '#dc2626'
               : 'var(--foreground)',
-            border: `1px solid ${status === 'success' 
-              ? 'var(--accent)' 
+            border: `1px solid ${status === 'success'
+              ? 'var(--accent)'
               : status === 'error'
               ? '#dc2626'
               : 'var(--border)'}`,
