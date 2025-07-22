@@ -232,7 +232,7 @@ export const ProjectCard = ({
                 </div>
               )}
               <button
-                className="btn btn-primary w-full bg-garnet hover:bg-garnet/90 text-white rounded-full font-dm-sans text-sm transition-all duration-200 border-0"
+                className="btn w-full bg-garnet hover:bg-garnet/90 text-white rounded-full font-dm-sans text-sm transition-all duration-200 border-0"
                 onClick={() => window.open(ctaLink, "_blank")}
               >
                 {ctaText}
