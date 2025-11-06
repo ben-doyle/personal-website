@@ -125,12 +125,11 @@ export default function Portfolio() {
       title: "ShokkEvents",
       description:
         "The ticketing portal powering Queensland's largest hardstyle promoter, and their community, the shows range from small club nights to festival sized events.",
-      ctaText: "View Case Study",
-      ctaLink: "https://shokkevents.com",
+      ctaText: "Shokk Events",
+      ctaLink: "https://www.shokkevents.com/about",
       logo: "/shokkevents.png",
       screenshots: ["/shokkevents1.png"],
       showGrowth: false,
-      isComingSoon: true
     },
     {
       title: "All-class cleaning & yard maintenance",
