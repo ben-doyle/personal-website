@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Resend } from "resend"
+import { appendToSheet } from "@/lib/googleSheets"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -54,6 +55,12 @@ export async function POST(request: NextRequest) {
     }
 
     console.log("Notification email sent successfully:", notificationData)
+
+    // Add to Google Sheets
+    const sheetResult = await appendToSheet(email)
+    if (!sheetResult.success) {
+      console.error("Failed to add to Google Sheets, but continuing...")
+    }
 
     // Send auto-reply to the visitor (using your verified domain)  
     const { data: autoReplyData, error: autoReplyError } = await resend.emails.send({
