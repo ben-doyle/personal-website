@@ -49,7 +49,7 @@ export const ProjectSection = ({
       </h2>
       
       <div className="relative group">
-        <div className="overflow-hidden">
+        <div className="overflow-hidden py-2">
           <div 
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentIndex * 50}%)` }}

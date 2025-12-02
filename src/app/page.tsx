@@ -99,9 +99,18 @@ export default function Portfolio() {
       tagline:
         "Explore your colleagues recommendations in your city, find the best coffee spots, bars, restaurants, and outdoor activities.",
       logo: "/guidr-logo.svg",
-              screenshots: ["/guidr1.png", "/guidr2.png", "/guidr3.png"],
+      screenshots: ["/guidr1.png", "/guidr2.png", "/guidr3.png"],
       ctaText: "Explore Guiddr",
       ctaLink: "https://guiddr.com",
+      showGrowth: false,
+    },
+    {
+      title: "Standup Randomiser",
+      description: "Randomize your daily standup order with ease",
+      tagline: "Add team members, create squads, and let the app randomly select the speaking order for fair and engaging standups.",
+      screenshots: ["/standup-randomiser1.png", "/standup-randomiser2.png", "/standup-randomiser3.png", "/standup-randomiser4.png"],
+      ctaText: "Try Standup Randomiser",
+      ctaLink: "https://standup-randomiser.vercel.app",
       showGrowth: false,
     },
   ]
