@@ -72,26 +72,18 @@ export const ProjectCard = ({
       <div className="card-body p-6 flex flex-col h-full">
         <div className="flex items-start justify-between mb-4">
           {logo ? (
-            <div className={`rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-100 ${
-              screenshots && screenshots.length === 3 
-                ? 'w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-12' 
-                : 'w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12'
-            }`}>
+            <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-100">
               <Image
                 src={logo}
                 alt={`${title} logo`}
-                width={100}
-                height={100}
+                width={48}
+                height={48}
                 className="w-full h-full object-contain p-0.5"
               />
             </div>
           ) : (
-            <div className={`rounded-xl bg-gradient-to-br from-garnet to-beaver flex items-center justify-center flex-shrink-0 ${
-              screenshots && screenshots.length === 3 
-                ? 'w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-12' 
-                : 'w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12'
-            }`}>
-              <span className="text-white font-bold text-xs sm:text-sm md:text-base">{title.charAt(0)}</span>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-garnet to-beaver flex items-center justify-center flex-shrink-0">
+              <span className="text-white font-bold text-sm">{title.charAt(0)}</span>
             </div>
           )}
           
@@ -104,17 +96,13 @@ export const ProjectCard = ({
                     <button
                       key={index}
                       onClick={() => onImageClick(screenshot)}
-                      className={`rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200 ${
-                        screenshots.length === 3 
-                          ? 'w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-12' 
-                          : 'w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12'
-                      }`}
+                      className="w-10 h-10 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200"
                     >
                       <Image
                         src={screenshot}
                         alt={`${title} screenshot ${index + 1}`}
-                        width={80}
-                        height={48}
+                        width={40}
+                        height={40}
                         className="w-full h-full object-cover"
                       />
                     </button>
@@ -126,13 +114,13 @@ export const ProjectCard = ({
                       <button
                         key={index}
                         onClick={() => onImageClick(screenshot)}
-                        className="w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200"
+                        className="w-10 h-10 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200"
                       >
                         <Image
                           src={screenshot}
                           alt={`${title} screenshot ${index + 1}`}
-                          width={80}
-                          height={48}
+                          width={40}
+                          height={40}
                           className="w-full h-full object-cover"
                         />
                       </button>
@@ -142,14 +130,14 @@ export const ProjectCard = ({
                         e.stopPropagation()
                         setShowAllThumbnails(!showAllThumbnails)
                       }}
-                      className="w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 flex items-center justify-center text-xs font-medium hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200 relative"
+                      className="w-10 h-10 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 flex items-center justify-center text-xs font-medium hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200 relative"
                       style={{
                         backgroundColor: 'var(--muted)',
                         color: '#ffffff'
                       }}
                     >
                       +{screenshots.length - 2}
-                      <ChevronDownIcon className={`w-2 h-2 sm:w-3 sm:h-3 ml-0.5 sm:ml-1 transition-transform duration-200 ${showAllThumbnails ? 'rotate-180' : ''}`} />
+                      <ChevronDownIcon className={`w-3 h-3 ml-0.5 transition-transform duration-200 ${showAllThumbnails ? 'rotate-180' : ''}`} />
                     </button>
                   </>
                 )}
@@ -158,7 +146,7 @@ export const ProjectCard = ({
               {/* Dropdown gallery for remaining images */}
               {showAllThumbnails && screenshots.length > 3 && (
                 <div 
-                  className="absolute top-14 sm:top-14 md:top-14 right-0 z-10 border border-beaver/20 dark:border-beaver/30 rounded-lg shadow-lg p-2 min-w-[120px] sm:min-w-[140px] md:min-w-[180px]"
+                  className="absolute top-12 right-0 z-10 border border-beaver/20 dark:border-beaver/30 rounded-lg shadow-lg p-2 min-w-[100px]"
                   style={{backgroundColor: 'var(--card-background)'}}
                 >
                   <div className="grid grid-cols-2 gap-2">
@@ -169,13 +157,13 @@ export const ProjectCard = ({
                           onImageClick(screenshot)
                           setShowAllThumbnails(false)
                         }}
-                        className="w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200"
+                        className="w-10 h-10 rounded-lg overflow-hidden border border-beaver/20 dark:border-beaver/30 hover:scale-105 hover:border-garnet hover:shadow-md transition-all duration-200"
                       >
                         <Image
                           src={screenshot}
                           alt={`${title} screenshot ${index + 3}`}
-                          width={80}
-                          height={48}
+                          width={40}
+                          height={40}
                           className="w-full h-full object-cover"
                         />
                       </button>
