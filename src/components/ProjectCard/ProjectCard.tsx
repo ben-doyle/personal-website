@@ -72,7 +72,7 @@ export const ProjectCard = ({
       <div className="card-body p-6 flex flex-col h-full">
         <div className="flex items-start justify-between mb-4">
           {logo ? (
-            <div className={`rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 ${
+            <div className={`rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-100 ${
               screenshots && screenshots.length === 3 
                 ? 'w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-12' 
                 : 'w-12 h-12 sm:w-16 sm:h-12 md:w-20 md:h-12'
@@ -82,7 +82,7 @@ export const ProjectCard = ({
                 alt={`${title} logo`}
                 width={100}
                 height={100}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain p-0.5"
               />
             </div>
           ) : (

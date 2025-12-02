@@ -74,6 +74,16 @@ export default function Portfolio() {
 
   const sideProjects = [
     {
+      title: "Motivation Map",
+      description: "Discover What Motivates You at Work",
+      tagline: "Create visual mind maps of your professional motivations and share them with your team.",
+      logo: "/motivationmap-logo.png",
+      screenshots: ["/motivationmap1.png", "/motivationmap2.png", "/motivationmap3.png", "/motivationmap-colorpicker.png"],
+      ctaText: "Try Motivation Map",
+      ctaLink: "https://motivationmap.me",
+      showGrowth: false,
+    },
+    {
       title: "ShakkaShuffle",
       description: "Planning Poker, in Quokka style!",
       tagline: "Estimate, collaborate, and hang loose like the happiest animal on Earth.",
