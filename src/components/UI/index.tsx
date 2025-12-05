@@ -10,7 +10,7 @@ interface AvatarProps {
 export const Avatar = ({ size = "w-40 h-40" }: AvatarProps) => (
   <div className={`${size} rounded-full overflow-hidden border-4 mx-auto`} style={{borderColor: 'var(--card-background)', backgroundColor: 'var(--card-background)'}}>
     <Image
-      src="/ben-profile.jpg?height=160&width=160"
+      src="/ben-profile.jpg"
       alt="Benjamin"
       width={160}
       height={160}
